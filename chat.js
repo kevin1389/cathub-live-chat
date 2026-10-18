@@ -57,13 +57,19 @@
   toggle.setAttribute("aria-expanded", "false");
 
   var panel = el("section", "iv-chat-panel");
-  panel.setAttribute("aria-label", "CatHub live chat");
+  panel.setAttribute("aria-label", "CatHub! Chat");
   panel.hidden = true;
 
   var header = el("header", "iv-chat-header");
   var headingWrap = el("div", "iv-chat-heading-wrap");
-  headingWrap.appendChild(el("div", "iv-chat-title", "CatHub! Chat"));
-  headingWrap.appendChild(el("div", "iv-chat-subtitle", "Be kind to other cats 🐾"));
+  var logo = el("img", "iv-chat-logo");
+  logo.src = "./cathub-logo.png";
+  logo.alt = "CatHub! logo";
+  headingWrap.appendChild(logo);
+  var headingText = el("div", "iv-chat-heading-text");
+  headingText.appendChild(el("div", "iv-chat-title", "CatHub! Chat"));
+  headingText.appendChild(el("div", "iv-chat-subtitle", "Be nice ig"));
+  headingWrap.appendChild(headingText);
   var headerActions = el("div", "iv-chat-header-actions");
   var dockButton = el("button", "iv-chat-icon-button", "↙");
   dockButton.type = "button";
