@@ -302,3 +302,101 @@ html, body { background: #0b0b0b !important; background-image: none !important; 
 #iv-chat-root .iv-chat-send { background:#fff; color:#111; box-shadow:none; }
 #iv-chat-root .iv-chat-send:hover { background:#dcdcdc; }
 @media (max-width:600px) { #iv-chat-root .iv-chat-logo { width:46px; height:46px; } }
+
+
+/* CatHub! strictly monochrome black-and-white theme */
+:root { color-scheme: dark; }
+html, body {
+  background: #080808 !important;
+  background-image: none !important;
+  color: #f5f5f5 !important;
+}
+#iv-chat-root {
+  --nord0: #080808;
+  --nord0m1: #202020;
+  --nord0m2: #292929;
+  --nord0m3: #363636;
+  --nord3: #555555;
+  --nord4: #d4d4d4;
+  --nord6: #ffffff;
+  --nord8: #eeeeee;
+  --nord9: #bdbdbd;
+  --nord10: #f5f5f5;
+  color: #f5f5f5 !important;
+  background: #080808 !important;
+}
+#iv-chat-root .iv-chat-panel {
+  background: #0b0b0b !important;
+  color: #f5f5f5 !important;
+  border-color: #383838 !important;
+}
+#iv-chat-root .iv-chat-header {
+  background: #101010 !important;
+  border-bottom-color: #333 !important;
+}
+#iv-chat-root .iv-chat-title { color: #fff !important; }
+#iv-chat-root .iv-chat-subtitle { color: #c9c9c9 !important; }
+#iv-chat-root .iv-chat-subtitle::before { content: none !important; }
+#iv-chat-root .iv-chat-name-area {
+  background: #111 !important;
+  border-bottom-color: #303030 !important;
+}
+#iv-chat-root .iv-chat-label { color: #c9c9c9 !important; }
+#iv-chat-root .iv-chat-name-input,
+#iv-chat-root .iv-chat-message-input {
+  background: #171717 !important;
+  color: #fff !important;
+  border-color: #505050 !important;
+}
+#iv-chat-root .iv-chat-name-input:focus,
+#iv-chat-root .iv-chat-message-input:focus {
+  border-color: #eee !important;
+  box-shadow: 0 0 0 2px #ffffff20 !important;
+}
+#iv-chat-root .iv-chat-messages {
+  background-color: #080808 !important;
+  background-image:
+    radial-gradient(ellipse at 15% 20%, #ffffff08, transparent 45%),
+    radial-gradient(ellipse at 85% 75%, #ffffff06, transparent 40%) !important;
+  scrollbar-color: #555 transparent;
+}
+#iv-chat-root .iv-chat-message {
+  background: #252525 !important;
+  border-color: #3b3b3b !important;
+  box-shadow: none !important;
+}
+#iv-chat-root .iv-chat-message.iv-chat-own {
+  background: #f0f0f0 !important;
+  border-color: #fff !important;
+}
+#iv-chat-root .iv-chat-message-name { color: #f5f5f5 !important; }
+#iv-chat-root .iv-chat-message.iv-chat-own .iv-chat-message-name { color: #111 !important; }
+#iv-chat-root .iv-chat-message-time { color: #aaa !important; }
+#iv-chat-root .iv-chat-message.iv-chat-own .iv-chat-message-time { color: #555 !important; }
+#iv-chat-root .iv-chat-message-body { color: #f5f5f5 !important; }
+#iv-chat-root .iv-chat-message.iv-chat-own .iv-chat-message-body { color: #111 !important; }
+#iv-chat-root .iv-chat-hint { color: #c5c5c5 !important; background: #101010 !important; }
+#iv-chat-root .iv-chat-hint-error { color: #f0f0f0 !important; }
+#iv-chat-root .iv-chat-composer {
+  background: #101010 !important;
+  border-top-color: #333 !important;
+}
+#iv-chat-root .iv-chat-send {
+  background: #f5f5f5 !important;
+  color: #111 !important;
+}
+#iv-chat-root .iv-chat-send:hover { background: #d5d5d5 !important; }
+#iv-chat-root .iv-chat-toggle {
+  background: #f4f4f4 !important;
+  color: #111 !important;
+  border-color: #555 !important;
+}
+#iv-chat-root .iv-chat-toggle:hover { background: #d9d9d9 !important; }
+#iv-chat-root .iv-chat-icon-button,
+#iv-chat-root .iv-chat-dock {
+  background: #292929 !important;
+  color: #fff !important;
+  border-color: #555 !important;
+}
+#iv-chat-root .iv-chat-icon-button:hover,
+#iv-chat-root .iv-chat-dock:hover { background: #444 !important; }
