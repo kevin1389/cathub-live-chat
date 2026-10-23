@@ -145,7 +145,7 @@
   }
   function renderMessages(items) {
     var wasNearBottom = list.scrollHeight - list.scrollTop - list.clientHeight < 50;
-    var fragment = document.createDocumentFragment();
+    var oldScrollTop = list.scrollTop;
     items.forEach(function (item) {
       var row = el("article", "iv-chat-message");
       if (String(item.name || "").toLowerCase() === savedName.toLowerCase() && savedName) {
@@ -160,7 +160,11 @@
       fragment.appendChild(row);
     });
     list.replaceChildren(fragment);
-    if (wasNearBottom) list.scrollTop = list.scrollHeight;
+if (wasNearBottom) {
+  list.scrollTop = list.scrollHeight;
+} else {
+  list.scrollTop = oldScrollTop;
+}
   }
   async function loadMessages() {
     if (document.hidden) return;
